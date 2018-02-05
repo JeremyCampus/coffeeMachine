@@ -2,9 +2,9 @@
         <div class="row">
             <div class="col-md-7">
               @foreach ($boissons as $boisson)
-                <?php $text=str_replace(' ','', $boisson->LIBELLE); ?>
-                <div id="{{$text}}" href="{{$boisson->PRIX}}" class="choix">
-                  <h3>{{$boisson->LIBELLE}}</h3><h4> {{$boisson->PRIX/100}}</h4>
+                <?php $text=str_replace(' ','', $boisson->libelle); ?>
+                <div id="{{$text}}" href="{{$boisson->prix}}" class="choix">
+                  <h3>{{$boisson->libelle}}</h3><h4> {{$boisson->prix/100}}</h4>
                 </div>
                @endforeach
 

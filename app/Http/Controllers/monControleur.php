@@ -18,7 +18,9 @@ class monControleur extends Controller
 {
   public function home(Request $request)
   {
-    return view('welcome');
+    $boissons = DB::table('boissons')->get();
+
+    return view('welcome', ["boissons" => $boissons]);
   }
 
   public function mesIngredients(Request $request)
