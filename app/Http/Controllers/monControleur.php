@@ -16,8 +16,28 @@ use Illuminate\Support\Facades\DB;
 
 class monControleur extends Controller
 {
-  public function store(Request $request)
+  public function home(Request $request)
   {
     return view('welcome');
+  }
+
+  public function mesIngredients(Request $request)
+  {
+    return view('ingredients');
+  }
+
+  public function mesRecettes(Request $request)
+  {
+    return view('recettes');
+  }
+
+  public function monMatos(Request $request)
+  {
+    return view('materiel');
+  }
+
+  public function monMonayeur(Request $request)
+  {
+    return view('monnayeur');
   }
 }
