@@ -11,7 +11,7 @@
 @section('content')
 
   @include('parts/sucres')
-  {{-- @include('parts/choixBoissons') --}}
+  @include('parts/choixBoissons')
   {{-- @include('parts/maBoisson') --}}
   @include('parts/pieces')
 
